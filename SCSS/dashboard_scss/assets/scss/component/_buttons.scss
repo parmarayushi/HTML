@@ -1,0 +1,13 @@
+// Button styles goes here
+.search-btn {
+  background-color: $primary;
+  color: $white;
+  border: $border-none;
+  width: $searchbtn-width;
+  height: $searchbtn-height;
+  left: 77%;
+
+  @include breakpoint(small){
+     display: none;
+    }
+}

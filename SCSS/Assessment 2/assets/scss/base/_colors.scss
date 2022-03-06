@@ -1,0 +1,30 @@
+$primary: #409af3;
+$secondary: #fafafa;
+$success: #1fb778;
+$success-bg: #f1fef3;
+$warning: #f59c49;
+$warning-bg: #fff4e8;
+$danger: #ed8081;
+$danger-bg: #ffeeed;
+$info: #6a68fa;
+$icon: #848484;
+$btn: #00b11c;
+$white: #ffffff;
+$black: #000000;
+$black-bg: #f6f6f6;
+$grey: #f2f2f2;
+
+//Body
+$body-bg: $secondary;
+
+//header
+$header-bg: $white;
+
+$theme-colors: (
+  "black": $black,
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "info": $info,
+);

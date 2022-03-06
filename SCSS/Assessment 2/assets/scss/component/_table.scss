@@ -1,0 +1,100 @@
+.recent-activity {
+  padding-bottom: 30px;
+}
+
+.table-wrapper {
+  width: $width100;
+  height: 300px;
+  background-color: $white;
+
+  .table {
+    width: $width100;
+    border-collapse: collapse;
+
+    .thead {
+      text-align: left;
+      th {
+        font-size: 14px;
+        color: $icon;
+        font-weight: $font-weight;
+        position: sticky;
+        top: 0;
+        background-color: $white;
+        padding: 16px;
+        border-bottom: 2px solid $secondary;
+      }
+
+      @include breakpoint(large) {
+        th.item-cell {
+          min-width: 250px;
+        }
+        th.date-cell {
+          min-width: 150px;
+        }
+        th.type-cell {
+          min-width: 100px;
+        }
+        th.cost-cell {
+          min-width: 100px;
+        }
+        th.last-cell {
+          min-width: 100px;
+        }
+        th.list-cell {
+          min-width: 100px;
+        }
+        th.auto-cell {
+          min-width: 100px;
+        }
+        th.buynow-cell{
+            min-width:100px;  
+        }
+      }
+    }
+    .tbody {
+      td {
+        font-size: 12px;
+        padding: 10px;
+        border-bottom: 2px solid $secondary;
+      }
+      .discarded {
+        padding: 5px;
+        color: $danger;
+        background-color: $danger-bg;
+        border-radius: 30px;
+      }
+
+      .want {
+        padding: 5px;
+        color: $success;
+        background-color: $success-bg;
+        border-radius: 30px;
+      }
+
+      .waiting {
+        padding: 5px;
+        color: $warning;
+        background-color: $warning-bg;
+        border-radius: 30px;
+      }
+
+      .cancel {
+        padding: 5px;
+        color: $black;
+        background-color: $black-bg;
+        border-radius: 30px;
+      }
+    }
+
+    img.image {
+      margin-right: 20px;
+      width: 20px;
+      height: 30px;
+    }
+
+    img.amazon {
+      width: 60px;
+      height: 20px;
+    }
+  }
+}

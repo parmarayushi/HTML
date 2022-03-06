@@ -1,0 +1,65 @@
+.dashboard-wrapper{
+  padding: 30px -15px;
+
+  .table-wrapper {
+    padding: 0 15px;
+    width: 65%;
+    height: 500px;
+
+    .table-container{
+    padding: 0 16px 16px 16px;
+    background-color: $white;
+    }
+
+    @include breakpoint(large){
+      width: 100%;
+      padding: 15px;
+    }
+
+    @include breakpoint(medium){
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .table {
+      width: $table-width;
+      background-color: $secondary;
+      border-collapse: collapse;
+      text-align: left;
+      padding: 20px;
+      
+      .thead {
+        .table-cell {
+          position: sticky;
+          top: 0;
+          background-color: $white;
+          padding: 20px;
+        }
+      }
+      .tbody {
+          .table-cell {
+            border-top: 20px solid $white;
+          }
+  
+          .img-width{
+            width: 25px;
+          }
+  
+          .status {
+            color: $primary;
+          }
+      }
+  
+      th,
+      td {
+        padding: 10px;
+      }
+  
+      .image {
+        width: 46px;
+        height: 46px;
+      }
+    }
+  }
+}
+

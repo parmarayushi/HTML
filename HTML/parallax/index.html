@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+      .parallax {
+        background-image: url("/assets/img/BG3.jpg");
+        min-height: 700px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax"></div>
+    <p style="height: 200px; background-color: rgba(255, 168, 127); font-size: 30px; text-align: center; padding:40px">
+       Effect without using opacity
+      </p>
+      <div class="parallax">
+        
+      </div>
+      <div class="parallax">
+        <p style="height: 200px; background-color: rgba(255, 168, 127, 0.76); font-size: 30px; text-align: center; padding:40px">
+            Effect using opacity
+          </p>
+      </div>
+  </body>
+</html>

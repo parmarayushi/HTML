@@ -1,0 +1,16 @@
+.main-wrapper {
+  background-color: $secondary;
+
+  .dashboard {
+    padding: 30px;
+    overflow: auto;
+
+    @include breakpoint(small){
+      padding: 16px;
+    }
+
+    @include breakpoint(mini){
+      padding: 16px;
+    }
+  }
+}

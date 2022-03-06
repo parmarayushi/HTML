@@ -1,0 +1,38 @@
+//mixin for position
+
+@mixin position ($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: $position;
+    top     : $top;
+    right   : $right;
+    bottom  : $bottom;
+    left    : $left;
+}
+
+//mixin for media queries
+@mixin breakpoint($size){
+    @if $size==mini{
+        @media (max-width:320px){
+            @content;
+        }
+    }
+    @else if $size==small{
+        @media (max-width:567px){
+            @content;
+        }
+    }
+    @else if $size==medium{
+        @media (max-width:768px){
+            @content;
+        }
+    }
+    @else if $size==large{
+        @media (max-width:992px){
+            @content;
+        }
+    }
+    @else if $size==xl-large{
+        @media (max-width:1200px){
+            @content;
+        }
+    }
+}

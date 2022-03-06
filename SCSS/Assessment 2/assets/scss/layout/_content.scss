@@ -1,0 +1,9 @@
+.wrapper{
+    .main-content{
+        padding: 30px;
+
+        @include breakpoint(small){
+            padding: 15px;
+        }
+    }
+}

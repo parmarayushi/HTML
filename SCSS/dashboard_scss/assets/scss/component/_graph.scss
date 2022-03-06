@@ -1,0 +1,26 @@
+.dashboard-wrapper{
+    margin: 30px -15px;
+    .statistics{
+        width: 35%;
+        padding: 0 15px;
+
+        @include breakpoint(large){
+            width: 100%;
+            padding: 15px;
+        }
+
+        @include breakpoint(medium){
+            width: 100%;
+            padding: 15px;
+        }
+    
+        .statistics-details{
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+            background-color: $white;
+        }
+    }
+    
+}
+

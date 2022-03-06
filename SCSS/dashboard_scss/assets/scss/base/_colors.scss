@@ -1,0 +1,30 @@
+// Theme Colors
+$primary: #438ffe;
+$secondary: #f1efef;
+$success: #8bc38a;
+$danger: #fe764b;
+$info: #83bcbd;
+$icon: #cbced3;
+$white: #ffffff;
+$black: #000000;
+
+//Body
+$body-bg: $secondary;
+
+//header
+$header-bg: $white;
+
+//card
+$card-bg: $white;
+$card-font-color: $black;
+$card-hover-font-color: $white;
+
+$theme-colors: (
+  "primary": $primary,
+  "success": $success,
+  "danger": $danger,
+  "secondary": $secondary,
+  "info": $info,
+  "white": $white,
+  "black": $black,
+);

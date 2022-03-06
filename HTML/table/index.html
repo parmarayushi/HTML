@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table style="width: 250px;">
+        <thead>
+            <tr>
+                <th rowspan="2" style="background-color: rgb(236, 144, 159);">S.no</th>
+                <th colspan="2" style="background-color: rgb(232, 241, 99);">Name</th>
+            </tr>
+            <tr style="background-color:rgb(223, 177, 236);">
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center; background-color:rgb(142, 248, 234);">
+            <tr>
+                <td>1</td>
+                <td>Aayushi</td>
+                <td>Parmar</td>
+            </tr>
+        </tbody>
+    </table>  
+    <!--End: Table1-->
+    
+    <br>
+
+    <!--Start: Table2-->
+    <table style="width: 250px;">
+        <tr>
+            <th colspan="2" style="background-color: rgb(61, 236, 134)">UI</th>
+            <th rowspan="3" style="background-color: rgb(172, 100, 214);">Javscript</th>
+        </tr>
+        <tr style="text-align: center; background-color:rgb(143, 236, 174);">
+            <td rowspan="2">HTML</td>
+            <td rowspan="2">CSS</td>
+        </tr>
+    </table>
+    <!--End: Table2-->
+</body>
+</html>

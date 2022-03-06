@@ -1,0 +1,107 @@
+// Card styles goes here
+
+.card-wrapper {
+  margin: 30px -15px;
+
+  .card-box {
+    padding: 0 15px;
+    width: $card-width;
+
+    @include breakpoint(large){
+      width: 50%;
+      padding: 15px;
+    }
+
+    @include breakpoint(medium){
+      width: 50%;
+      padding: 15px;
+    }
+
+    @include breakpoint(small){
+      width: 100%;
+      padding: 15px;
+    }
+
+    .card {
+      line-height: 1.5;
+      background-color: $white;
+
+      .card-icon {
+        font-size: 24px;
+        height: 60px;
+        width: 60px;
+       
+      }
+
+      .statistics-details {
+        font-size: 24px;
+      }
+
+      .card-text {
+        p {
+          color: #cbced7;
+          font-size: 20px;
+        }
+        h1 {
+          font-weight: 200;
+          font-size: 30px;
+          border-bottom: 1px solid #e2e2e2;
+        }
+      }
+
+      .card-status {
+        p {
+          color: #cbced7;
+        }
+        .subtitle {
+          color: #4e96fe;
+        }
+      }
+      &:hover {
+        .card-text {
+          p {
+            color: $white;
+          }
+          h1 {
+            color: $white;
+          }
+        }
+
+        .statistics-details {
+          color: $white;
+        }
+
+        .card-status {
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $key, $value in $theme-colors {
+  .card-bg-#{$key} {
+    .card-logo {
+      background-color: lighten($color: $value, $amount: 30%);
+      .card-icon {
+        color: $value;
+      }
+    }
+
+    &.card {
+      &:hover {
+        background-color: $value;
+
+        .card-logo {
+          background-color: lighten($color: $value, $amount: 5%);
+
+          .card-icon {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
