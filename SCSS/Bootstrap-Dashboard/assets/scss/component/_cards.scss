@@ -1,0 +1,78 @@
+// Card styles goes here
+.card-wrapper {
+  margin: 20px -10px 30px;
+
+  .card-box {
+    padding: 0 10px;
+    width: 16.66%;
+
+    @include breakpoint(xl-large) {
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    @include breakpoint(medium) {
+      width: $width50;
+    }
+
+    @include breakpoint(mini) {
+      width: $width100;
+    }
+
+    .card {
+      cursor: pointer;
+      border-radius: $border-radius-10;
+      background-color: $white;
+
+      .card-text {
+        p {
+          font-size: 12px;
+          padding-bottom: 10px;
+        }
+      }
+
+      &:hover {
+        .card-text {
+          p {
+            color: $white;
+          }
+          h3 {
+            color: $white;
+          }
+        }
+      }
+
+      .card-icon {
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+@each $key, $value in $theme-colors {
+  .card-bg-#{$key} {
+    .card-logo {
+      border-radius: 50%;
+      background-color: rgba($value, 0.12);
+      .card-icon {
+        color: $value;
+      }
+    }
+
+    &.card {
+      &:hover {
+        background-color: $value;
+
+        .card-logo {
+          background-color: lighten($color: $value, $amount: 20%);
+        }
+
+        .card-icon {
+          color: $white;
+        }
+      }
+    }
+  }
+}

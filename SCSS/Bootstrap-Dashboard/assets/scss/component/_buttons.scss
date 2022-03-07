@@ -1,0 +1,12 @@
+// Button styles goes here
+.main-content {
+  .btn-filter {
+    cursor: pointer;
+    background-color: $btn;
+    color: $white;
+    border: none;
+    height: $btn-height;
+    width: $btn-width;
+    border-radius: $border-radius-5;
+  }
+}

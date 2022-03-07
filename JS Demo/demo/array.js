@@ -68,14 +68,21 @@ console.log(arr);
 
 console.log(arr2);
 
+
 //returns array at position 2 of arr.
-console.log(arr.at(2));
+console.log("Array at index 2:",arr.at(2));
 
 //returns last second array.
-console.log(arr.at(-2));
+console.log("Array at index -2:",arr.at(-2));
 
 //combines arr2 with arr.
-console.log(arr.concat(arr2));
+console.log("Concate two arrays:",arr.concat(arr2));
+
+//join
+console.log("Join:",arr2.join("****"))
+
+//entries
+// console.log("entries:",arr.entries())
 
 const isFrom1Rivet = (person) => person.company === "1Rivet";
 const isNotFrom1Rivet = (person) => person.company != "1Rivet";
@@ -84,10 +91,10 @@ console.log("1Rivet : ", arr.every(isFrom1Rivet));
 console.log("Other company : ", arr2.every(isFrom1Rivet));
 
 //pop() removes the last element of the array
-console.log(arr.pop());
+console.log("Array pop:",arr.pop());
 
 //push() add the array at the end
-console.log(
+console.log("Array push:",
   arr.push({
     name: "Shreya",
     gender: "Female",
@@ -96,27 +103,32 @@ console.log(
 );
 
 //shift() removes the first array element
-console.log(arr.shift());
+console.log("Array shift:",arr.shift());
 
 //unshift() adds a new element at the beginning of the array.
-console.log(
+console.log("Array unshift:",
   arr2.unshift({
     name: "Yash",
     gender: "Male",
     company: "1Rivet",
   })
 );
+console.log("New array:",arr2);
 
 //removes the element
-console.log(arr.splice(0, 1));
+console.log("Splice:",arr.splice(0,1));
 
 //it will create a new array
-console.log(arr2.slice(2));
+console.log("Slice:",arr2.slice(2));
 
 //it sort the array alphabetically
-console.log(arr.sort());
+console.log("Sort:",arr.sort());
 
 //it reverse the array elements.
-console.log(arr2.reverse());
+console.log("Reverse:",arr2.reverse());
 
-//
+//find
+console.log("Find:",arr2.find(test=> test.name==="Tanmay"))
+
+//filter
+console.log("Filter:",arr.filter(test=>test.gender==="Female"))
