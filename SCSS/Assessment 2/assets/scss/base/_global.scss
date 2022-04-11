@@ -5,6 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+// Typographical styles goes here
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+ul {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
 
 html,
 body {
